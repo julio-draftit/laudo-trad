@@ -2,17 +2,19 @@ import express from "express";
 import multer from "multer";
 import { createBlobService } from "azure-storage";
 const azure = require("azure-storage");
+const cors = require("cors");
 import { v4 as uuidv4 } from "uuid";
 import bodyParser from "body-parser";
 
 interface MulterRequest extends express.Request {
   file?: any;
 }
-
+console.log("Iniciando Aplicação");
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
-const port = 3000;
-
+const port = 8080;
+console.log("Port: " + port);
 const ACCOUNT_NAME = "storage1hiae";
 const ACCOUNT_KEY =
   "hNNIZm5gLfpJRyeAt5DauKA3JUwGBmNerLOPCSSTc3LoR4Re6+aTFArE5bxQlR7v+5ZWwcbciSBy+AStKVISLQ==";

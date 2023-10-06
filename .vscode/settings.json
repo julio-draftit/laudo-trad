@@ -1,0 +1,5 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/cd38513f-a52c-44fe-8ef7-3dbaa96b33a0/resourceGroups/TraducaoHIAE/providers/Microsoft.Web/sites/laudo-trad-backend",
+  "appService.deploySubpath": "."
+}
